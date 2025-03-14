@@ -7,14 +7,28 @@
     <title>Senai - Gerenciador de Salas</title>
 </head>
 <body id="bodyLogin">
+    <!-- Container pai do formulário -->
     <main id="mainLogin">
+        <!-- Formulário de Login -->
         <form action="#" method="get" class="formLogin">
             <h1 class="titleLogin">Login</h1>
             <br>
+            <!-- Inputs para colocar os dados -->
             <input type="text" class="inputLogin" name="name" id="name" placeholder="Name" required><br>
             <input type="email" class="inputLogin" name="email" id="email" placeholder="Email" required><br>
             <input type="password" class="inputLogin" name="password" id="password" placeholder="Password" required><br>
+            <select name="tipoDeUsuario" id="tipoDeUsuario">
+                <option id="firstSelectLogin" value="first" selected disabled>Select</option>
+                <option value="adm">Administrador</option>
+                <option value="coordenador">Coordenador</option>
+                <option value="instrutor">Instrutor</option>
+                <option value="aluno">Aluno</option>
+            </select>
             <br>
+            <!-- Link caso o usuário esqueça a senha -->
+            <a href="#" id="linkEsqueceuASenha">Esqueceu a senha? Clique aqui!</a>
+            <br>
+            <!-- Button para entrar no sistema -->
             <button class="buttonForm">Entrar</button>
         </form>
     </main>

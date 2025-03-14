@@ -32,6 +32,26 @@
     border-radius: 10px;
 }
 
+select {
+    width: 310px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#firstSelectLogin {
+    color: #B0B0B0;
+}
+
+#linkEsqueceuASenha {
+    color: #000;
+}
+
+#linkEsqueceuASenha:hover {
+    color: #ffff;
+}
+
 .buttonForm {
     padding: 20px 40px;
     border: none;
