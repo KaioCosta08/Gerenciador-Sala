@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Senai - Salas</title>
+</head>
+<body id="bodySalas">
+    <!-- Painel do Adm -->
+    <section class="cmdbar">
+        <h1>Administrador</h1>
+        <br>
+        <hr>
+        <br>
+        <nav id="navAdm">
+            <ul id="ulAdm">
+                <li id="liAdm" ><a id="aAdm" href="#">Salas</a></li><br>
+                <li id="liAdm" ><a id="aAdm" href="#">Criar Salas</a></li><br>
+                <li id="liAdm" ><a id="aAdm" href="#">Cadastrar Usuários</a></li><br>
+                <li id="liAdm" ><a id="aAdm" href="#">Pedidos de Salas</a></li><br>
+                <li id="liAdm" ><a id="aAdm" href="#">Relatórios de Salas</a></li><br>
+            </ul>
+        </nav>
+        <a href="#" class="configCmdBar" >Configurações</a>
+    </section>
+
+    <!-- Área Principal de Salas -->
+    <section id="mainSala">
+        <!-- Inicio da box de pesquisa de salas -->
+        <div class="boxTitleBuscarSalas">
+            <h1>Buscar Salas</h1>
+            <div class="linhaTitlePrincipal"></div>
+        </div>
+        <br>
+        <!-- Área onde o usuário irá pesquisar uma sala -->
+        <div id="boxInputOfSearch">
+            <!-- Icon do Bootstrap -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            <!-- Input para que o usuário consiga -->
+            <input type="text" name="buscarSala" id="buscarSala">
+        </div>
+        <!-- Fim da box de pesquisa de salas -->
+
+        <br><br>
+
+        <!-- Inicio da lista de Salas -->
+        <section id="boxListaSalas">
+            <ul id="ulListaSalas">
+                <!-- Titulo informando qual bloco está começando -->
+                 <h2 class="titleBlocoLaboLista">Laboratórios do Bloco C</h2>
+                 <br>
+                <!-- Primeiro Laboratório Bloco C-->
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: C1</h3>
+                        <h3>Bloco: C</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+                <br>
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: C2</h3>
+                        <h3>Bloco: C</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+                <br>
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: C3</h3>
+                        <h3>Bloco: C</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+                <br>
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: C4</h3>
+                        <h3>Bloco: C</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+                <br><br>
+                <!-- Titulo do Bloco G -->
+                <h2 class="titleBlocoLaboLista">Laboratórios do Bloco G</h2>
+                <br>
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: G1</h3>
+                        <h3>Bloco: G</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+                <br>
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: G2</h3>
+                        <h3>Bloco: G</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+                <br>
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: G3</h3>
+                        <h3>Bloco: G</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+                <br>
+                <div class="boxLi">
+                    <li class="liListaSalas">
+                        <h3>Laboratório: G4</h3>
+                        <h3>Bloco: G</h3>
+                        <h3>Capacidade: 35</h3>
+                        <ul class="buttons">
+                            <li><button class="disponivel">Disponivel</button></li>
+                            <li><button class="indisponivel">Indísponivel</button></li>
+                            <li><button class="emUso">Em uso</button></li>
+                        </ul>
+                        <p class="msgDisponivel"></p>
+                        <p class="msgIndisponivel"></p>
+                        <p class="msgEmUso"></p>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </section>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>
