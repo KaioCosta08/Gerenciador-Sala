@@ -1,0 +1,188 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.modalConfig {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+.modalConfig.ativo {
+    display: flex;
+}
+
+.modal {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.buttonFecharModalConfig
+{
+    padding: 10px 14px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 15px;
+    left: 48%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttonFecharModalConfig:hover 
+{
+    background-color: #D9D9D9;
+}
+
+.titleModalConfig {
+    font-size: 2.2rem
+}
+
+.nameUser 
+{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.idUser 
+{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.boxUser
+{
+    width: 390px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9B9B9B;
+    border-radius: 10px;
+} 
+.buttonSairConta 
+{
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.buttonSairConta:hover
+{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: crimson;
+    color: #fff;
+}
+
+.buttonsDarkAndLight {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonDark 
+{
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.buttonDark:hover 
+{
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.buttonLight
+{
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.buttonLight:hover {
+    background-color: cornsilk;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+
+
+#bodySalas {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#bodySalas.escuro {
+    background-color: #333;
+}
+
+#bodySalas.escuro .cmdbar {
+    background-color: #841212;
+}
+
+
+/* Meios Problemas Resolvidos do Tema Claro */
+#bodySalas.claro {
+    background-color: #fff ;
+}
+
+#bodySalas.claro  .titlePrincipal22 {
+    color: #000;
+} 
+
+#bodySalas.claro .linhaTitlePrincipal{
+    background-color: #000;
+}
+
+#bodySalas.claro .linhaTitlePrincipal {
+    background-color: #000;
+}
+
+#bodySalas.claro #boxListaSalas {
+    box-shadow: 0 0 5px 3px black;
+    padding: 50px 50px;
+}
+
+#bodySalas.claro .titleBlocoLaboLista {
+    color: #000;
+}
+
+#bodySalas.claro .ulListaSalas {
+    border: 7px solid black;
+}
+
+
+#bodySalas.claro .liListaSalas {
+    background-color: #DCDCDC;
+}

@@ -55,3 +55,41 @@ botoesEmUso.forEach((item, index) => {
         }
     });
 });
+
+
+//Bloco de Script do Modal
+function modal() {
+    const containerModal = window.document.querySelector('.modalConfig');  
+    const linkAbrir = window.document.querySelector('.configCmdBar');
+    const buttonFecharModal = window.document.querySelector('.buttonFecharModalConfig');
+
+    linkAbrir.addEventListener('click', (event)=> {
+        event.preventDefault();
+        containerModal.classList.add('ativo')
+    })
+    buttonFecharModal.addEventListener('click', (event)=> {
+        event.preventDefault();
+        containerModal.classList.remove('ativo')
+    })
+}
+modal();
+
+//Bloco de Script deixando o sistema escuro ou claro
+function modoDeCor() {
+    const bodi = document.querySelector('#bodySalas');
+    const fundoEscuro = document.querySelector('.buttonDark');
+    const fundoClaro = document.querySelector('.buttonLight');
+
+    fundoEscuro.addEventListener('click', (event) => {
+        event.preventDefault();
+        bodi.classList.remove('claro');
+        bodi.classList.add('escuro');
+    });
+
+    fundoClaro.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        bodi.classList.remove('escuro');
+        bodi.classList.add('claro');
+    });
+}
+modoDeCor();
