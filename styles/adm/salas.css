@@ -12,47 +12,6 @@
     background-color: #bababa;
 }
 
-/* Painel */
-.cmdbar
-{
-    background-color: #841212;
-    width: 231px;
-    padding: 10px 10px;
-}
-
-.cmdbar h1  
-{
-    text-align: center;
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-#navAdm , #ulAdm
-{
-    padding: 10px 10px;
-    list-style-type: none;
-}
-
-#liAdm, a {
-    text-decoration: none;
-    color: #fff;
-}
-
-#aAdm:hover 
-{
-    color: #bababa;
-}
-
-.configCmdBar 
-{
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    position: relative;
-    top: 60%;
-}
-
-
 /* Parte Principal do Site */
 #mainSala 
 {
