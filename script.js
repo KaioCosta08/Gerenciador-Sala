@@ -93,3 +93,7 @@ function modoDeCor() {
     });
 }
 modoDeCor();
+
+function tipoUsuario() {
+    const user = document.querySelector()
+}
