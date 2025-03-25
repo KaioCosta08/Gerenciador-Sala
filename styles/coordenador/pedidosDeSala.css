@@ -1,0 +1,83 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bodyPedidosSala 
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #bababa;
+}
+
+#mainPedidosSala 
+{
+    width: 75%;
+    height: 98vh;
+    position: absolute; 
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+
+.linhaPedidosdeSala 
+{
+    background-color: #fff;
+    width: 350px;
+    height: 3px;
+}
+
+#ulPedidosDeSala
+{
+    box-shadow: 0 0 5px 2px #fff;
+    padding: 10px 40px;
+    height: 85vh;
+    list-style-type: none;
+    overflow: scroll;
+}
+
+.pedidosDeSala 
+{   
+    height: 20%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    padding: 5px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.buttonsPedidosDeSala 
+{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonAceitarPedido
+{
+    width: 150px;
+    background-color: #30E219;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonRecusarPedido 
+{
+    width: 150px;
+    background-color: #EF3C2C;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Configuração dos Pedidos de Sala */
+.configPedidosSala 
+{
+    margin-top: 65%;
+}

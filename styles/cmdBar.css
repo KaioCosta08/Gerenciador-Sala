@@ -1,7 +1,9 @@
+
 /* Painel */
 .cmdbar
 {
-    background-color: #841212;
+    /* background-color: #841212; */
+    background-color: #000;
     width: 231px;
     padding: 10px 10px;
 }
@@ -36,4 +38,9 @@
     font-size: 1.5rem;
     position: relative;
     top: 60%;
+}
+
+.configCmdBar:hover 
+{
+    color: #bababa;
 }
