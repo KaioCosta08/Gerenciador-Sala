@@ -45,3 +45,15 @@
 {
     color: #bababa;
 }
+
+/* Link das Configurações dos Coordenadores */
+.configCmdBarCordn
+{
+    margin-top: 45%;
+}
+
+/* Link dasConfigurações dos Alunos */
+.configCmdBarAluno
+{
+    margin-top: 35%;
+}

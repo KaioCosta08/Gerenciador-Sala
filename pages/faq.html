@@ -6,28 +6,32 @@
     <link rel="stylesheet" href="../styles/style.css">
     <title>Senai - Faq</title>
 </head>
-<body>
+<body id="bodyFaq">
     <!-- Painel do Adm -->
     <section class="cmdbar">
-        <h1>Administrador</h1>
+        <h1>FAQ</h1>
         <br>
         <hr>
         <br>
         <nav id="navAdm">
             <ul id="ulAdm">
-                <li id="liAdm"><a id="aAdm" href="#">Pedidos de Salas</a></li><br>
-                <li id="liAdm"><a id="aAdm" href="#">Relatórios de Salas</a></li><br>
+                <li id="liAdm"><a id="aAdm" href="#comoFuncionaIsso">Como Funciona?</a></li><br>
+                <li id="liAdm"><a id="aAdm" href="#comoFuncionaCoordenador">Coordenador</a></li><br>
+                <li id="liAdm"><a id="aAdm" href="#comoFuncionaInstrutor">Instrutor</a></li><br>
+                <li id="liAdm"><a id="aAdm" href="#comoFuncionaAluno">Aluno</a></li><br>
+                <li id="liAdm"><a id="aAdm" href="#usuarioEnviaADuvidaFaq">Enviar Dúvidas</a></li><br>
             </ul>
         </nav>
-        <a href="#" class="configCmdBar configCmdBarCordn">Configurações</a>
     </section>
 
 
     <!-- Como funciona o Site e "Para o que serve" -->
     <main id="mainFaq">
-        <section class="informacaoFaq">
+        <section class="informacaoFaq" id="comoFuncionaIsso">
+            <br>
             <h1 class="comoFuncionaTitle">Como Funciona?</h1>
-            <p>
+            <br>
+            <p class="pFaq">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                 Tempora minima eum pariatur libero officia aspernatur quas <br>
                 ut ipsam earum laborum impedit similique blanditiis voluptates <br>
@@ -44,13 +48,17 @@
                 Quas quis soluta aliquam iste consequuntur distinctio <br>
                 cumque praesentium explicabo quod eaque. <br>
             </p>
+            <br>
         </section>
+
+        <br><br>
 
         <!-- Como funciona a parte do Coordenador -->
-
-        <section class="informacaoFaq">
+        <section class="informacaoFaq" id="comoFuncionaCoordenador">
+            <br>
             <h1 class="comoFuncionaTitle">Coordenador</h1>
-            <p>
+            <br>
+            <p class="pFaq">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                 Tempora minima eum pariatur libero officia aspernatur quas <br>
                 ut ipsam earum laborum impedit similique blanditiis voluptates <br>
@@ -67,13 +75,16 @@
                 Quas quis soluta aliquam iste consequuntur distinctio <br>
                 cumque praesentium explicabo quod eaque. <br>
             </p>
+            <br>
         </section>
+
+        <br><br>
 
         <!-- Como funciona a parte do Instrutor -->
-
-        <section class="informacaoFaq">
+        <section class="informacaoFaq" id="comoFuncionaInstrutor">
+            <br>
             <h1 class="comoFuncionaTitle">Instrutor</h1>
-            <p>
+            <p class="pFaq">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                 Tempora minima eum pariatur libero officia aspernatur quas <br>
                 ut ipsam earum laborum impedit similique blanditiis voluptates <br>
@@ -90,13 +101,17 @@
                 Quas quis soluta aliquam iste consequuntur distinctio <br>
                 cumque praesentium explicabo quod eaque. <br>
             </p>
+            <br>
         </section>
+
+        <br><br>
 
         <!-- Como funciona a parte do Aluno -->
-
-        <section class="informacaoFaq">
+        <section class="informacaoFaq" id="comoFuncionaAluno">
+            <br>
             <h1 class="comoFuncionaTitle">Aluno</h1>
-            <p>
+            <br>
+            <p class="pFaq">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                 Tempora minima eum pariatur libero officia aspernatur quas <br>
                 ut ipsam earum laborum impedit similique blanditiis voluptates <br>
@@ -113,12 +128,23 @@
                 Quas quis soluta aliquam iste consequuntur distinctio <br>
                 cumque praesentium explicabo quod eaque. <br>
             </p>
+            <br>
         </section>
+
+        <br><br>
 
         <!-- Form para enviar dúvidas 
           -->
-         <section >
-
+         <section class="formFaq" id="usuarioEnviaADuvidaFaq">
+            <form action="#" method="get" class="formularioFaq">
+                <fieldset>  <!-- Cria uma "borda fina em torno do formulário" -->
+                    <!-- <legend>Enviar Sua Dúvida!</legend> Cria uma legenda dentro da borda -->
+                    <h1 class="titleTesteFaq">Enviar sua dúvida!</h1>
+                    <br>
+                    <textarea name="duvida" id="duvida" cols="60" rows="15" placeholder="Digite aqui sua dúvida!"></textarea> <br>
+                    <button type="submit" class="buttonFaq">Enviar</button>
+                </fieldset>
+            </form>
          </section>
     </main>
 </body>

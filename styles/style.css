@@ -1,9 +1,10 @@
 @import url('login.css');
 @import url('cmdBar.css');
 @import url('modalConfig.css');
+@import url('faq.css');
 @import url('adm/salas.css');
 @import url('adm/dropDownMenu.css');
 @import url('adm/criarSala.css');
 @import url('coordenador/pedidosDeSala.css');
-@import url('coordenador/firstPageCordn.css');
+@import url('firstPage.css');
 @import url('adm/removerUsuario.css');
