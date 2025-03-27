@@ -10,28 +10,28 @@
     <!-- Container pai do formulário -->
     <main id="mainLogin">
         <!-- Formulário de Login -->
-        <form action="#" method="get" class="formLogin">
+        <form action="#" class="formLogin">
             <h1 class="titleLogin">Login</h1>
             <br>
             <!-- Inputs para colocar os dados -->
-            <input type="text" class="inputLogin" name="name" id="name" placeholder="Name" required><br>
-            <input type="email" class="inputLogin" name="email" id="email" placeholder="Email" required><br>
-            <input type="password" class="inputLogin" name="password" id="password" placeholder="Password" required><br>
+            <input type="text" class="inputLogin" name="name" id="name" placeholder="Name" ><br>
+            <input type="email" class="inputLogin" name="email" id="email" placeholder="Email" ><br>
+            <input type="password" class="inputLogin" name="password" id="password" placeholder="Password"><br>
             <select name="tipoDeUsuario" id="tipoDeUsuario">
-                <option id="firstSelectLogin" value="first" selected disabled>Select</option>
-                <option value="adm">Administrador</option>
-                <option value="coordenador">Coordenador</option>
-                <option value="instrutor">Instrutor</option>
-                <option value="aluno">Aluno</option>
-            </select>
+                <option id="firstSelectLogin" value="first" selected disabled>Selecione</option>
+                <option value="admini" class="usuarioLogin">Administrador</option>
+                <option value="coordenador" class="usuarioLogin">Coordenador</option>
+                <option value="instrutor" class="usuarioLogin">Instrutor</option>
+                <option value="aluno" class="usuarioLogin">Aluno</option>
+            </select> 
             <br>
             <!-- Link caso o usuário esqueça a senha -->
-            <a href="#" id="linkEsqueceuASenha">Esqueceu a senha? Clique aqui!</a>
-            <a href="pages/faq.html" id="linkEsqueceuASenha">Dúvidas Sobre o Site? Acesse o FAQ</a>
+            <a href="#" class="linkLogin">Esqueceu a senha? Clique aqui!</a>
+            <a href="pages/faq.html" class="linkLogin">Dúvidas Sobre o Site? Acesse o FAQ</a>
             <br>
             <!-- Button para entrar no sistema -->
             <button class="buttonForm">Entrar</button>
         </form>
-    </main>
+    </main
 </body>
 </html>
