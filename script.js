@@ -9,7 +9,7 @@ const mensagensEmUso = document.querySelectorAll('.msgEmUso');
 
 //Função no qual vai esconder as mensagens
 
-function esconderMsg (index) {
+function esconderMsg(index) {
     mensagensDisponivel[index].style.display = "none"
     mensagensIndisponivel[index].style.display = "none"
     mensagensEmUso[index].style.display = "none"
@@ -17,8 +17,8 @@ function esconderMsg (index) {
 
 // Adicionando evento ao botão "Disponivel"
 botoesDisponivel.forEach((item, index) => {
-    item.addEventListener('click', ()=> {
-        if(mensagensDisponivel[index].style.display === "block") {
+    item.addEventListener('click', () => {
+        if (mensagensDisponivel[index].style.display === "block") {
             mensagensDisponivel[index].style.display = "none"; // Esconde a mensagem
         } else {
             esconderMsg(index); // Esconde todas as mensagens
@@ -56,44 +56,70 @@ botoesEmUso.forEach((item, index) => {
     });
 });
 
+// Aviso sobre as Configurações
+function aviso() {
+    let configSystem = window.document.querySelectorAll('.configCmdBar');
 
-//Bloco de Script do Modal
-function modal() {
-    const containerModal = window.document.querySelector('.modalConfig');  
-    const linkAbrir = window.document.querySelector('.configCmdBar');
-    const buttonFecharModal = window.document.querySelector('.buttonFecharModalConfig');
-
-    linkAbrir.addEventListener('click', (event)=> {
-        event.preventDefault();
-        containerModal.classList.add('ativo')
-    })
-    buttonFecharModal.addEventListener('click', (event)=> {
-        event.preventDefault();
-        containerModal.classList.remove('ativo')
+    configSystem.forEach((aviso) => {
+        aviso.addEventListener('click', (event) => {
+            event.preventDefault();
+            alert('Sistema de configurações em manutenção.')
+        })
     })
 }
-modal();
+aviso();
 
-//Bloco de Script deixando o sistema escuro ou claro
-function modoDeCor() {
-    const bodi = document.querySelector('#bodySalas');
-    const fundoEscuro = document.querySelector('.buttonDark');
-    const fundoClaro = document.querySelector('.buttonLight');
 
-    fundoEscuro.addEventListener('click', (event) => {
-        event.preventDefault();
-        bodi.classList.remove('claro');
-        bodi.classList.add('escuro');
-    });
+// Alert nos pedidos de sala
+function pedidosDeSalas() {
+    let butaoAceitar = window.document.querySelectorAll('.buttonAceitarPedido');
+    let butaoRecusar = window.document.querySelectorAll('.buttonRecusarPedido');
+    // let liDoPedidoDeSala = window.document.querySelectorAll('.pedidosDeSala');
 
-    fundoClaro.addEventListener('click', (event) => {
-        event.preventDefault(); 
-        bodi.classList.remove('escuro');
-        bodi.classList.add('claro');
-    });
+    // Bloco de script do button aceitar
+    butaoAceitar.forEach((itemAceitar) => {
+        itemAceitar.addEventListener('click', (event) => {
+            event.preventDefault()
+            alert('Esse pedido foi aceito.')
+            
+        })
+    })
+
+    //Bloco de script button recusar
+    butaoRecusar.forEach((itemRecusar)=> {
+        itemRecusar.addEventListener('click', (event)=> {
+            event.preventDefault()
+            alert("Esse pedido foi recusado")
+        })
+    })
 }
-modoDeCor();
+pedidosDeSalas();
 
-function tipoUsuario() {
-    const user = document.querySelector()
+
+function confirmacaoDePresenca() {
+    let buttonSim = window.document.querySelectorAll('.buttonSimLoc')
+    let buttonTalvez = window.document.querySelectorAll('.buttonTalvezLoc')
+    let buttonNao = window.document.querySelectorAll('.buttonNaoLoc')
+
+    buttonSim.forEach((item) => {
+        item.addEventListener('click', (event)=> {
+            event.preventDefault();
+            alert('Boa aula!')
+        })
+    })
+
+    buttonTalvez.forEach((item2) =>{
+        item2.addEventListener('click', (event)=> {
+            event.preventDefault();
+            alert('Aguardaremos na portaria!')
+        })
+    })
+
+    buttonNao.forEach((item3) =>{
+        item3.addEventListener('click', (event)=> {
+            event.preventDefault();
+            alert('Que pena! Envie um relatorio informando o motivo.')
+        })
+    })
 }
+confirmacaoDePresenca();

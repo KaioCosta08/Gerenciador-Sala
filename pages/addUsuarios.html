@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Senai - Criar Sala</title>
+    <title>Senai - Adicionar Usuarios</title>
 </head>
 
 <body id="bodyCoordenador">
@@ -21,7 +21,7 @@
                 <li class="liCmdBar" ><a class="aCmdBar" href="salas.html">Salas</a></li><br>
                 <li class="liCmdBar" ><a class="aCmdBar" href="criarSala.html">Criar Salas</a></li><br>
                 <li class="liCmdBar" ><a class="aCmdBar" href="addUsuarios.html">Cadastrar Usuarios</a></li><br>
-                <li class="liCmdBar" ><a class="aCmdBar" href="pedidosDeSala.html">Pedidos de Salas</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="pedidosDeSalaAdm.html">Pedidos de Salas</a></li><br>
                 <li class="liCmdBar" ><a class="aCmdBar" href="relatorios.html">Relatórios de Salas</a></li><br>
             </ul>
         </nav>
@@ -31,15 +31,21 @@
     <section id="mainFormCriarSalas">
         <!-- Inicio da box de pesquisa de salas -->
         <div class="boxTitleBuscarSalas">
-            <h1>Criar Salas</h1>
+            <h1>Adicionar Usuarios</h1>
             <div class="linhaTitlePrincipal"></div>
         </div>
 
             <div class="teste">
                 <form action="#" class="formCriarSala" method="get">
-                    <input type="text" class="inputFormCriarSala" placeholder="Bloco">
-                    <input type="text" class="inputFormCriarSala" placeholder="Numeração da Sala">
-                    <input type="text" class="inputFormCriarSala" placeholder="Capacidade">
+                    <input type="text" class="inputFormCriarSala" placeholder="Nome Usuário">
+                    <input type="text" class="inputFormCriarSala" placeholder="Identificação">
+                    <select name="inputSelectCriarSala" id="inputSelectCriarSala">
+                        <option value="selecione" selected disabled >Selecione a Função</option>
+                        <option value="instrutor">instrutor</option>
+                        <option value="aluno">Aluno</option>
+                        <option value="coordenador">coordenador</option>
+                        <option value="adm">Adm</option>
+                    </select>
                     <button type="submit" class="buttonFreeForm">Criar</button>
                 </form>
             </div>

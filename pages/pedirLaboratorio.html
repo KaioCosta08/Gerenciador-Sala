@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ptb-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body id="bodyPedirLaboratorio">  
+    <!-- Painel do Adm -->
+    <section class="cmdbar">
+        <h1>Instrutor</h1>
+        <br>
+        <hr>
+        <br>
+        <nav class="navCmdBar">
+            <ul class="ulCmdBar">
+                <li class="liCmdBar" ><a class="aCmdBar" href="firstPageInstrutor.html">Pagina Inicial</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="pedirLaboratorio.html">Pedir Sala</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="verificacaoDeAlunos.html">Verificação</a></li><br>
+            </ul>
+        </nav>
+        <a href="#" class="configCmdBar configCmdBarInstrutor" >Configurações</a>
+    </section>
+
+    <section id="mainFormCriarSalas">
+        <!-- Inicio da box de pesquisa de salas -->
+        <div class="boxTitleBuscarSalas">
+            <h1>Pedir Laboratório</h1>
+            <div class="linhaTitlePrincipal linhaTitlePrincipalPedirSala"></div>
+        </div>
+
+            <div class="teste">
+                <form action="#" class="formCriarSala" method="get">
+                    <input type="text" class="inputFormCriarSala" placeholder="Nome">
+                    <input type="text" class="inputFormCriarSala" placeholder="Bloco">
+                    <input type="text" class="inputFormCriarSala" placeholder="Laboratório">
+                    <select name="cursos" class="inputFormCriarSala" id="cursosPedirSala">
+                        <option value="#" selected disabled>Selecione</option>
+                        <option value="#">Desenvolvimento de Sistemas</option>
+                        <option value="#">Redes</option>
+                        <option value="#">Panificação</option>
+                        <option value="#">Automação</option>
+                        <option value="#">Eletrônica</option>
+                    </select>
+                    <button type="submit" class="buttonFreeForm">Criar</button>
+                </form>
+            </div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

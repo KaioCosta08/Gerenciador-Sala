@@ -7,22 +7,23 @@
     <title>Senai - Salas</title>
 </head>
 <body id="bodySalas">
-    <!-- Painel do Adm -->
-    <section class="cmdbar">
+     <!-- Painel do Adm -->
+     <section class="cmdbar">
         <h1>Administrador</h1>
         <br>
         <hr>
         <br>
-        <nav id="navAdm">
-            <ul id="ulAdm">
-                <li id="liAdm" ><a id="aAdm" href="#">Salas</a></li><br>
-                <li id="liAdm" ><a id="aAdm" href="#">Criar Salas</a></li><br>
-                <li id="liAdm" ><a id="aAdm" href="#">Cadastrar Usuários</a></li><br>
-                <li id="liAdm" ><a id="aAdm" href="#">Pedidos de Salas</a></li><br>
-                <li id="liAdm" ><a id="aAdm" href="#">Relatórios de Salas</a></li><br>
+        <nav class="navCmdBar">
+            <ul class="ulCmdBar">
+                <li class="liCmdBar" ><a class="aCmdBar" href="firstPageAdm.html">Pagina Inicial</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="salas.html">Salas</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="criarSala.html">Criar Salas</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="addUsuarios.html">Cadastrar Usuarios</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="pedidosDeSalaAdm.html">Pedidos de Salas</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="relatorios.html">Relatórios de Salas</a></li><br>
             </ul>
         </nav>
-        <a href="#" class="configCmdBar" >Configurações</a>
+        <a href="#" class="configCmdBar configCmdBarAdm" >Configurações</a>
     </section>
 
     <!-- Área Principal de Salas -->
@@ -195,37 +196,6 @@
         </section>
     </section>
 
-
-    <section class="modalConfig">
-        <div class="modal">
-            <button class="buttonFecharModalConfig">X</button>
-            <h1 class="titleModalConfig">Configurações</h1>
-            <br><br>
-            <div class="boxUser">
-                <br>    
-                <img src="../images/kaio.png" alt="fotoPerfilUser">
-                <br>
-                <h3 class="nameUser">Kaio Oliveira Costa</h3>
-                <br>
-                <h3 class="idUser">Id: 12345678</h3>
-                <br>
-                <a href="#">
-                    <button class="buttonSairConta">Sair</button>
-                </a>
-                <br>
-            </div>
-            <br><br>
-            <div class="buttonsDarkAndLight">
-                <button class="buttonDark">Dark</button>
-                <button class="buttonLight">Light</button>
-            </div>
-            <br><br>
-        </div>
-    </section>
-
-
-
-    <!-- Iniciando JavaScript -->
     <script src="../script.js"></script>
 </body>
 </html>

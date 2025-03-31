@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Senai - Pedidos de Sala</title>
+</head>
+
+<body id="bodyPedidosSala">
+    <!-- Painel do Adm -->
+    <section class="cmdbar">
+        <h1>Instrutor</h1>
+        <br>
+        <hr>
+        <br>
+        <nav class="navCmdBar">
+            <ul class="ulCmdBar">
+                <li class="liCmdBar" ><a class="aCmdBar" href="firstPageInstrutor.html">Pagina Inicial</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="pedirLaboratorio.html">Pedir Sala</a></li><br>
+                <li class="liCmdBar" ><a class="aCmdBar" href="verificacaoDeAlunos.html">Verificação</a></li><br>
+            </ul>
+        </nav>
+        <a href="#" class="configCmdBar configCmdBarInstrutor" >Configurações</a>
+    </section>
+
+    <section id="mainVerificaoDeAlunos">
+        <div class="boxTitleBuscarSalas">
+            <h1 class="titlePrincipal22">Verificação de Presenças</h1>
+            <div class="linhaVerificacaoDeAluno"></div>
+        </div>
+
+        <ul id="ulVerificacao">
+            <li class="verficacaoDeSala">
+                <div class="dadosVerificacao">
+                    <h3>Curso: Desenvolvimento de Sistemas</h3>
+                    <h3>Turno: Matutino</h3>
+                </div>
+                <a href="verificacaoAlunosManha.html">
+                <button class="buttonVerificar">Verificar Lista de Alunos</button>
+                </a>
+            </li>
+            <li class="verficacaoDeSala">
+                <div class="dadosVerificacao">
+                    <h3>Curso: Desenvolvimento de Sistemas</h3>
+                    <h3>Turno: Vespertino</h3>
+                </div>
+                <a href="verificacaoAlunosTarde.html">
+                    <button class="buttonVerificar">Verificar Lista de Alunos</button>
+                </a>
+            </li>
+
+            <li class="verficacaoDeSala">
+                <div class="dadosVerificacao">
+                    <h3>Curso: Desenvolvimento de Sistemas</h3>
+                    <h3>Turno: Noturno</h3>
+                </div>
+                <a href="verificacaoAlunosNoturno.html"><button class="buttonVerificar">Verificar Lista de Alunos</button></a>
+        </ul>
+    </section>
+</body>
+
+</html>

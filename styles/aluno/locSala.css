@@ -1,10 +1,113 @@
-* 
+*
 {
-    margin: 0; padding: 0; box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#bodylocSala 
+#bodyLocSala
 {
-    width: 100%; height: 100vh; display: flex;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #b4b4b4;
 }
 
+#mainlocSalas
+{
+
+    width: 75%;
+    height: 98vh;
+    position: absolute; top: 50%; left: 56%; 
+    transform: translate(-50%, -50%);
+}
+
+.listaLocSala
+{
+    padding: 20px 20px;
+}
+
+/* Ul */
+.ulListaLocSala
+{
+    border: 2px solid black;
+    padding: 30px 30px; max-height: 700px;
+    overflow: scroll;
+}
+
+.liListaLocSala
+{
+    background-color: #fff;
+    box-shadow: 5px 5px #000;
+    margin-top: 30px;
+    padding: 10px 10px;
+    display: flex; align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.buttonsLocSalas
+{
+    width: 370px; height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 30px;
+
+}
+
+.buttonsPresenca
+{
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttonSimLoc:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.buttonTalvezLoc:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.buttonNaoLoc:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.buttonSimLoc
+{
+    width: 85px;
+    height: 40px;
+    border: none; outline: none;
+    border-radius: 10px;
+    background-color: #30E219;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.buttonTalvezLoc
+{
+    width: 85px;
+    height: 40px;
+    border: none; outline: none;
+    border-radius: 10px;
+    background-color: #E8E11D;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.buttonNaoLoc
+{
+    width: 85px;
+    height: 40px;
+    border: none; outline: none;
+    border-radius: 10px;
+    background-color: #EF3C2C;
+    cursor: pointer;
+    transition: 1s;
+}

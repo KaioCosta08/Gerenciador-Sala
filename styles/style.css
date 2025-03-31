@@ -4,8 +4,15 @@
 @import url('modalConfig.css');
 @import url('faq.css');
 @import url('adm/salas.css');
-@import url('adm/dropDownMenu.css');
 @import url('adm/criarSala.css');
 @import url('coordenador/pedidosDeSala.css');
 @import url('firstPage.css');
 @import url('adm/removerUsuario.css');
+@import url('adm/relatorios.css');
+@import url('instrutor/pedirSala.css');
+@import url('instrutor/verificacaoDeAlunos.css');
+@import url('instrutor/verificacaoAlunosTurno.css');
+@import url('aluno/locSala.css');
+
+
+

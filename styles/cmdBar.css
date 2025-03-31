@@ -16,26 +16,27 @@
     font-size: 1.5rem;
 }
 
-#navAdm , #ulAdm
+.navCmdBar, .ulCmdBar
 {
     padding: 10px 10px;
     list-style-type: none;
 }
 
-#liAdm, a {
+.liCmdBar, .aCmdBar {
     text-decoration: none;
     color: #fff;
 }
 
-#aAdm:hover 
+.aCmdBar:hover 
 {
     color: #bababa;
 }
 
 .configCmdBar 
 {
-    display: flex;
-    justify-content: center;
+    display: flex; justify-content: center;
+    text-decoration: none;
+    color: #fff;
     font-size: 1.5rem;
     position: relative;
     top: 60%;
@@ -54,6 +55,12 @@
 
 /* Link dasConfigurações dos Alunos */
 .configCmdBarAluno
+{
+    margin-top: 50%;
+}
+
+/* Link das Configurações dos Instrutores */
+.configCmdBarInstrutor
 {
     margin-top: 45%;
 }

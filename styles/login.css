@@ -8,7 +8,7 @@
     font-family: "Poppins", sans-serif;
     background: linear-gradient(90deg, #0000FF, #00FFFF, #00FF00, #7B68EE, #FF00FF, #FF0000, #FFFF00);
     background-size: 1000% 1000%;
-    animation: animation 5s ease infinite  alternate;
+    animation: animation 15s ease infinite  alternate;
 }
 
 @keyframes animation{
@@ -41,7 +41,12 @@
     border-radius: 10px;
 }
 
-.linkLogin:hover
+.linkInicioLogin
+{
+    color: #fff;
+}
+
+.linkInicioLogin:hover
 {   
     color: #000;
 }
